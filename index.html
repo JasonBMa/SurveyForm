@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Survey Test </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>
+    <form id="survey-form">
+      <label id="name-label" for="name"> Name <input name="name" id="name" type="text" placeholder="Enter your name" required/></label>
+      <label id="email-label" for="email"> Email <input name="email" id="email" type="email" placeholder="Enter your Email" required/></label>
+      <label id="number-label"for="number"> Age (optional) <input name="number" id="number" type="number" placeholder="Age" min="17" max="120"/></label>
+    <label>What is your favorite feature of freeCodeCamp?</label>
+    <select id="dropdown">
+      <option value="">(Select one)</option>
+      <option value="1">Comments</option>
+      <option value="2">Code Examples</option>
+      <option value="3">Free</option>
+    </select>
+
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <label for="Definitely"><input class="inline" type="radio" id="Definitely" name="recommendation" value="Definitely"/> Definitely</label>
+    <label for="Maybe"><input class="inline" type="radio" id="Maybe" name="recommendation"/value="Maybe" > Maybe</label>
+    <label for="Not sure"><input class="inline" type="radio" id="Not sure" name="recommendation" value="Not sure"/> Not sure</label>
+
+    <label>What what you like to see improved?</label>
+    <label for="front-end-projects"><input class="inline" id= "front-end-projects" type="checkbox" value="Front-end-Projects"/> Front-end Projects</label>
+    <label for="back-end-projects"><input class="inline" id= "back-end-projects" type="checkbox" value="Back-end-Projects"/> Back-end Projects</label>
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+
+    <input type="submit" id="submit"/>
+    </form>
+  </body>
+</html>
